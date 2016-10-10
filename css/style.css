@@ -1,0 +1,61 @@
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+}
+
+//FONTS
+
+/*Titilium*/
+
+@font-face {
+    font-family="Titillium Bold";
+    src="../fonts/Titillium-Bold.otf";
+}
+
+@font-face {
+    font-family="Titillium Light";
+    src="../fonts/Titillium-Light.otf";
+}
+
+@font-face {
+    font-family="Titillium Regular";
+    src="../fonts/Titillium-Regular.otf";
+}
+
+@font-face {
+    font-family="Titillium SemiBold";
+    src="../fonts/Titillium-Semibold.otf";
+}
+
+
+/*Brush script*/
+
+@font-face {
+    font-family: "Brush Script MT";
+    src: url("http://www.myfontfree.com/data/54/b/brush-script-mt/BRUSHSCI.TTF");
+}
+body {
+font-family: 'Titillium Web', sans-serif;
+}
+h3 {
+    font-family:Brush Script MT;
+    font-size:2em;
+    color:#0B82A4;
+    text-align: right;
+}
+header {
+width:100%;
+}
+.nav__menu {
+display: flex;
+
+}
+.nav__menu li {
+padding:1em;
+font-family: 'Titillium Web', sans-serif;
+font-weight: 600;
+}
+.header__logo img{
+    width:500px;
+}
