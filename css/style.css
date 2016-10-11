@@ -4,58 +4,114 @@
     box-sizing: border-box;
 }
 
-//FONTS
+/*GENERAL*/
 
-/*Titilium*/
-
-@font-face {
-    font-family="Titillium Bold";
-    src="../fonts/Titillium-Bold.otf";
+a {
+    text-decoration: none;
+    color: black;
 }
 
-@font-face {
-    font-family="Titillium Light";
-    src="../fonts/Titillium-Light.otf";
+a:link {
+    color: black;
+    text-decoration: none;
 }
 
-@font-face {
-    font-family="Titillium Regular";
-    src="../fonts/Titillium-Regular.otf";
+a:visited {
+    text-decoration: none;
 }
 
-@font-face {
-    font-family="Titillium SemiBold";
-    src="../fonts/Titillium-Semibold.otf";
+a:hover {
+    text-decoration: none;
 }
 
-
-/*Brush script*/
-
-@font-face {
-    font-family: "Brush Script MT";
-    src: url("http://www.myfontfree.com/data/54/b/brush-script-mt/BRUSHSCI.TTF");
-}
 body {
-font-family: 'Titillium Web', sans-serif;
+    font-family: 'Titillium Web', sans-serif;
 }
-h3 {
-    font-family:Brush Script MT;
-    font-size:2em;
-    color:#0B82A4;
-    text-align: right;
-}
-header {
-width:100%;
-}
-.nav__menu {
-display: flex;
 
+h3 {
+    font-family: Brush Script MT;
+    font-size: 1.7em;
+    color: #0B82A4;
+    text-align: right;
+    margin-right: 3em;
+    padding-top: 1.4em;
 }
+
+
+/*HEADER*/
+
+header {
+    width: 100%;
+    height: 35vh;
+}
+
+.header__reseaux {
+    font-size: 2.7em;
+    position: absolute;
+    display: flex;
+    margin-left: 2.5em;
+    margin-top: 1em;
+}
+
+.header__reseaux li {
+    padding-left: 0.3em;
+}
+
+.header__reseaux a {
+    color: #0B82A4;
+}
+
+.header__reseaux a:hover {
+    color: #D7245C;
+}
+
+.header__logo img {
+    width: 150px;
+}
+
+.header__logo {
+    position: absolute;
+    margin-left: 37em;
+}
+
+
+/*NAV*/
+
+nav {
+    width: 100%;
+    display: flex;
+    align-self: flex-end;
+    margin-top: 7.5em;
+}
+
+.nav__menu {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
 .nav__menu li {
-padding:1em;
-font-family: 'Titillium Web', sans-serif;
-font-weight: 600;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 600;
+    font-size: 1.1em;
 }
-.header__logo img{
-    width:500px;
+
+.nav__menu a {
+    margin: 1em;
+    margin-left: 4em;
+    margin-right: 4em;
+}
+
+.nav__menu a:link {
+    color: black;
+}
+
+.nav__menu a:visited {
+    color: #D7245C;
+}
+
+.nav__menu a:hover {
+    color: #D7245C;
 }
